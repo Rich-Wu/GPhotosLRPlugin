@@ -8,7 +8,7 @@
         const error = params.get('error');
 
         if (code) {
-            window.location = 'lightroom://com.github.richwu.lrgooglephotospublisher?code=' + encodeURIComponent(code);
+            window.location = 'lightroom://com.github.richwu.lrgooglephotospublisher/?code=' + encodeURIComponent(code);
         } else {
             document.write('Authorization failed: ' + (error || 'unknown error'));
         }
@@ -16,7 +16,6 @@
 </head>
 
 <body>
-    <p>Redirecting back to Lightroom…</p>
 </body>
 
 </html>
